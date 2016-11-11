@@ -1,0 +1,25 @@
+.circle {
+	background-color: #09B8C1;
+	height: 50px;
+	width: 50px;
+	border-radius: 100%;
+	index-left: 250px;
+	animation-name: fly;
+	animation-duration: 0.005s;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	top: 250px;
+	left: 50%;
+	position: absolute;
+}
+
+@keyframes fly {
+	0% {
+		transform: rotate(0deg) translateX(180px);
+	}
+	100% {
+		transform: rotate(360deg) translateX(180px);
+	}
+}
